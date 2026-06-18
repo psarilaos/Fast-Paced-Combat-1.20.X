@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "fastpacedcombat",
+	"version": "${version}",
+	"name": "Fast Paced Combat",
+	"description": "This mod aims to refine Minecraft's combat system by making the player move faster, jump higher, and adapt to combat strategies according to his needs. This is the Fast Paced Combat Mod.",
+	"authors": [
+		"O Psarilaos"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fastpacedcombat/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          	"net.opsarilaos.fastpacedcombat.FastPacedCombat"
+		],
+		"fabric-datagen": [
+          	"net.opsarilaos.fastpacedcombat.FastPacedCombatDataGenerator"
+		],
+		"client": [
+		  	"net.opsarilaos.fastpacedcombat.FastPacedCombatModClient"
+		]
+	},
+	"mixins": [
+		"fastpacedcombat.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
