@@ -29,6 +29,7 @@ public class FastPacedCombat implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+		// This is a test comment
 		LOGGER.info("Initializing FastPacedCombat...");
 
 		// This is where you will trigger your registration classes later
