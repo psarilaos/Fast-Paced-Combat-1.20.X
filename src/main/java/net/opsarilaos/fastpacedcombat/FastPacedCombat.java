@@ -2,6 +2,8 @@ package net.opsarilaos.fastpacedcombat;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.opsarilaos.fastpacedcombat.block.ModBlocks;
+import net.opsarilaos.fastpacedcombat.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,13 +27,14 @@ public class FastPacedCombat implements ModInitializer {
 	 */
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
+		// This code runs as soon as Minecraft is in a mod-load-ready state (after loading vanilla).
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		// This is a test comment
 		LOGGER.info("Initializing FastPacedCombat...");
 
 		// This is where you will trigger your registration classes later
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
